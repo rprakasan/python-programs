@@ -7,7 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-       - run: echo 'Hello world!'
+        - name: checkout
+          uses: action/checkout@v3
+        
+        - name: Job run
+          uses: setup-python@v2
+        - run: python person.py
     
 
  
