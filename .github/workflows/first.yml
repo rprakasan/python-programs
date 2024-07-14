@@ -12,7 +12,9 @@ jobs:
         
         - name: Job run
           uses: actions/setup-python@v2
-        - run: python person.py
+          
+        - name: Execting job
+          run: python person.py
     
 
  
