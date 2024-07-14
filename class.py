@@ -1,10 +1,16 @@
-class MyClass():
-    def __init__(self,name,age) -> None:
+class Dog:
+
+    def __init__(self, name):
         self.name = name
-        self.age = age
+        self.tricks = []    # creates a new empty list for each dog
 
-    def printname(self):
-        print(self.name)
-        print(self.age)
+    def add_trick(self, trick):
+        self.tricks.append(trick)
 
-printname('Rajesh')
+d = Dog('Fido')
+e = Dog('Buddy')
+d.add_trick('roll over')
+e.add_trick('play dead')
+print(d.tricks)
+print(e.tricks)
+
