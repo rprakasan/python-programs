@@ -12,9 +12,11 @@ jobs:
         
         - name: Job run
           uses: actions/setup-python@v2
-          
-        - name: Execting job
-          run: python person.py
+
+        - name: Execting to extract the report
+          run: |
+               echo "executing the script"
+               python person.py
     
 
  
